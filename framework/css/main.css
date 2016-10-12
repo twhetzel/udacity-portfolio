@@ -1,6 +1,6 @@
-* {
+/** {
     border: 1px solid red !important;
-}
+}*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -11,12 +11,7 @@
 * {
     font-family: 'Lato', sans-serif;
 }
-@media only screen and (max-width: 500px) {
-    p {
-        /*display: none;*/
-        background-color: blue;
-    }
-}
+
 .grid {
     margin: 0 auto;
     max-width: 1200px;
@@ -26,10 +21,14 @@
 .row {
     width: 100%;
     /*margin-bottom: 20px;*/
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
 }
-
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 .col-1 {
     width: 8.33%;
 }
@@ -77,3 +76,91 @@
 .col-12 {
     width: 100%;
 }
+img {
+    margin: 4px;
+    margin: auto;
+    display: block;
+}
+.profile-image {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+.title {
+    font-size: 54px;
+    font-weight: 100;
+}
+.role {
+    font-size: 18px;
+    padding-top:15px;
+    font-weight: 100;
+}
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header {
+    font-size: 18px;
+    color: #BCBBBB;
+}
+.project-name {
+    color: #747704;
+    font-weight: 300;
+}
+
+/* RESPONSIVE COLUMNS http://www.responsivegridsystem.com */
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+    width: 100%;
+}
+.span_2_of_3 {
+    width: 66.1%;
+}
+.span_1_of_3 {
+    width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { margin: 1% 0 1% 0%;}
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+/* Remove project images on smaller screens */
+@media only screen and (max-width: 980px) {
+    /*img {height: 200; width: 100; margin: auto; display: block;}*/
+    img {display: none}
+}
+
