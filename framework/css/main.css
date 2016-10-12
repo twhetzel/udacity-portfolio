@@ -158,9 +158,10 @@ img {
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
-/* Remove project images on smaller screens */
+/* Make images responsive */
 @media only screen and (max-width: 980px) {
-    /*img {height: 200; width: 100; margin: auto; display: block;}*/
-    img {display: none}
+    img {height: auto; max-width: 100%;}
+    /*img {display: none}*/
+    .profile-image {height: auto; max-width: 100%;}
 }
 
