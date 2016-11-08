@@ -1,0 +1,17 @@
+# Add custom styles
+img {
+    margin: 4px;
+    margin: auto;
+    display: block;
+}
+.logo-image {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+.block-image {
+    height: 300px;
+    width: 555px;
+    margin: auto;
+}
