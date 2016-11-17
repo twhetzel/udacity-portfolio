@@ -168,8 +168,6 @@ main {
  */
 
 .top-news {
-  float: right;
-  width: 320px;
   height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
@@ -199,6 +197,7 @@ main {
 .top-news__item a {
   text-decoration: none;
   color: #666;
+  padding: 1.5em inherit;
 }
 
 .top-news__item a:hover,
@@ -214,8 +213,6 @@ main {
  */
 
 .scores {
-  width: 480px;
-  float: left;
   padding-top: 1em;
 }
 
@@ -263,8 +260,6 @@ main {
  */
 
 .weather {
-  float: right;
-  width: 320px;
   padding: 1em;
 }
 
@@ -314,7 +309,7 @@ main {
 
 /*
  *
- * Weather
+ * Recent News
  *
  */
 
@@ -341,6 +336,7 @@ main {
 .snippet__title a {
   text-decoration: none;
   color: #666;
+  padding: 1.5em inherit;
 }
 
 .snippet__title a:hover,
